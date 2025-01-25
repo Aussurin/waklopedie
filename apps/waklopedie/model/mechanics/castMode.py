@@ -1,7 +1,7 @@
 from mongoengine import *
 
 
-class CastMode (document) :
+class CastMode (Document) :
         nom : StringField
         img : ImageField
         illustration : ImageField

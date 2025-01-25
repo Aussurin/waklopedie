@@ -1,6 +1,6 @@
 from mongoengine import *
 
 
-class NeedTarget (document) :
+class NeedTarget (Document) :
         nom : StringField
         img : ImageField

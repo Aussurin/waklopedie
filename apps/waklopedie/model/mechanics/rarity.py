@@ -1,6 +1,6 @@
 from mongoengine import *
 
 
-class Rarity (document) :
+class Rarity (Document) :
         nom : StringField
         color : StringField

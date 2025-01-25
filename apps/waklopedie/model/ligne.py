@@ -1,10 +1,10 @@
 from mongoengine import *
-from model import *
-from mechanics import elem
+from apps.waklopedie.model import *
+from apps.waklopedie.model.mechanics import elem
 
 
 
-class Ligne (document) :
+class Ligne (Document) :
         ratio = FloatField
         qty = IntField
         effect = StringField(required=True) 

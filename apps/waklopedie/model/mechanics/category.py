@@ -1,6 +1,6 @@
 from mongoengine import *
 
 
-class Category (document) :
+class Category (Document) :
         nom : StringField
         icon : ImageField

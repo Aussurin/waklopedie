@@ -1,6 +1,6 @@
 from mongoengine import *
 
 
-class Slot (document) :
+class Slot (Document) :
         nom : StringField
         icon : ImageField

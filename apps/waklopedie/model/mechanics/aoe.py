@@ -1,7 +1,7 @@
 from mongoengine import *
 
 
-class Aoe (document) :
+class Aoe (Document) :
         nom : StringField
         img : ImageField
         illustration : ImageField

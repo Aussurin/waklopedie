@@ -1,7 +1,11 @@
 from mongoengine import *
-from model import spell
+from apps.waklopedie.model.spell import Spell
 
-class Class(Document):
+
+class Classe(Document):
     name = StringField(required=True)
     img = ImageField
-    spellbook = ListField(ReferenceField(spell.Spell))
+    spellbook = ListField(ReferenceField(Spell))
+    
+def get_class(classname: StringField):
+    return Classe.objects(name=classname)

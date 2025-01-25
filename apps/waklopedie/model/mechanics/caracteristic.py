@@ -1,6 +1,6 @@
 from mongoengine import *
 
 
-class caracteristic (document) :
+class caracteristic (Document) :
         nom : StringField
         icon : ImageField

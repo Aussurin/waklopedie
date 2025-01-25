@@ -1,6 +1,6 @@
 from mongoengine import *
-from model import ligne
-from mechanics import needTarget,castMode,aoe
+from apps.waklopedie.model.ligne import Ligne
+from apps.waklopedie.model.mechanics import needTarget,castMode,aoe
 
 
 class Spell(Document):
@@ -15,5 +15,5 @@ class Spell(Document):
     cast_mode = ReferenceField(castMode.CastMode)
     aoe = ReferenceField(aoe.Aoe)
     unlock = IntField
-    lignes = ListField(ReferenceField(ligne.Ligne))
+    lignes = ListField(ReferenceField(Ligne))
     img : ImageField
